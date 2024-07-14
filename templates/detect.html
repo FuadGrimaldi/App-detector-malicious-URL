@@ -13,12 +13,12 @@ endblock %} {% block content %}
         >
           Let's not stress for
           <span class="text-violet-800 dark:text-violet-500">Website</span>
-          designs.
+          URLs.
         </h1>
         <p
           class="mt-5 sm:mt-10 lg:w-10/12 text-gray-600 dark:text-gray-300 font-normal text-center lg:text-xl text-md"
         >
-          A Community build tailwind component library.
+          Drop the url below to check
         </p>
       </div>
       <div class="flex w-11/12 md:w-8/12 xl:w-6/12">
@@ -36,7 +36,7 @@ endblock %} {% block content %}
             <button
               class="inline-flex items-center gap-2 bg-violet-700 text-white text-lg font-semibold py-3 px-6 rounded-r-md lg:text-md text-sm"
             >
-              <span>Find</span>
+              <span></span>
               <svg
                 class="text-gray-200 h-5 w-5 p-0 fill-current"
                 xmlns="http://www.w3.org/2000/svg"
@@ -70,5 +70,9 @@ endblock %} {% block content %}
   <h5 class="font-normal text-center lg:text-xl text-md mb-1 mt-3">
     Conclusion from model K-Neighboars
   </h5>
+  <p class="text-center">
+    The URL <strong>{{ url }}</strong> is categorized as:
+    <strong>{{ prediction }}</strong>
+  </p>
 </div>
 {% endblock %}

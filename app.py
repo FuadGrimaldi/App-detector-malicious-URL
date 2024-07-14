@@ -3,6 +3,7 @@ import pandas as pd
 from urllib.parse import urlparse
 from tld import get_tld
 import re
+import pickle
 
 
 app = Flask(import_name="__init__" , template_folder="" , static_folder="static")
@@ -107,11 +108,21 @@ def root():
 def contact():
     return  render_template("templates/contact.html" )
 
+file = open("ML/KNeighborsClassifier.pkl","rb")
+model = pickle.load(file)
+file.close()
+
 @app.route("/detect" , methods=["GET" , "POST"]) 
 def detect():
-     if request.method == "POST" :
+     if request.method == "POST":
         url = request.form['url']
-        features = URL_Converter(url)
-        print(features)
-        return render_template('templates/detect.html', features=features.to_html(classes='table table-striped'))
+        features_df = URL_Converter([url])
+        features = features_df.to_numpy().reshape(1, -1)
+        
+        # Melakukan prediksi dengan model
+        pred = model.predict(features)[0]
+        categories = {0: "benign", 1: "defacement", 2: "phishing", 3: "malware"}
+        result = categories[pred]
+
+        return render_template('templates/detect.html', features=features_df.to_html(classes='table table-striped'), prediction=result, url=url)
      return render_template("templates/detect.html")
