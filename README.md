@@ -4,6 +4,19 @@ Web untuk mendeteksi URL berbahaya, web ini di dedikasikan untuk pengajuan HKI d
 
 Website dibangun dengan framework flask pada server-side dan pada client-side dibangung menggunakan html dan framework css (tailwind). Model machine learning hasil training sudah tersedia di folder `ML`. Model ini di-import dan digunakan di bagian server-side untuk melakukan deteksi URL berbahaya. Anda dapat menemukan kode terkait pengolahan model di `app.py`.
 
+## Tampilan
+- Home
+
+![home](https://github.com/user-attachments/assets/87907c12-2a1a-47a5-b00c-4d137f2034e9)
+
+- Detect
+
+![detect](https://github.com/user-attachments/assets/f7be943a-1a32-4d4e-8a1b-145e00968a59)
+
+- Resul
+
+![result](https://github.com/user-attachments/assets/66091f09-d333-42cb-b1fb-4b2d8cecc1e0)
+
 ## Prasyarat
 
 Sebelum melanjutkan, pastikan Anda telah memenuhi persyaratan berikut pada mesin Anda.
