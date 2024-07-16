@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, redirect
+from flask import Flask, request, render_template
 import pandas as pd
 from urllib.parse import urlparse
 from tld import get_tld
@@ -7,7 +7,7 @@ import pickle
 
 
 app = Flask(import_name="__init__" , template_folder="" , static_folder="static")
-app.secret_key = "my_secret"
+
 
 # Define the functions here
 def process_tld(url):
