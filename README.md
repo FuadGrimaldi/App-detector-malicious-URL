@@ -7,13 +7,22 @@ Website dibangun dengan framework flask pada server-side dan pada client-side di
 ## Tampilan
 - Home
 
-![home](https://github.com/user-attachments/assets/87907c12-2a1a-47a5-b00c-4d137f2034e9)
+![Screenshot 2024-07-16 182546](https://github.com/user-attachments/assets/81e7f5ef-12a9-471e-9017-451c000d4bd9)
+
+- FAQ
+
+![Screenshot 2024-07-16 182750](https://github.com/user-attachments/assets/5ccf81d2-4e70-41cd-9683-952ab90a1287)
+
+- Contact
+
+![Screenshot 2024-07-16 182915](https://github.com/user-attachments/assets/00e0d703-16fb-46d1-8cf2-285649438db0)
+
 
 - Detect
 
 ![detect](https://github.com/user-attachments/assets/f7be943a-1a32-4d4e-8a1b-145e00968a59)
 
-- Resul
+- Result
 
 ![result](https://github.com/user-attachments/assets/66091f09-d333-42cb-b1fb-4b2d8cecc1e0)
 
