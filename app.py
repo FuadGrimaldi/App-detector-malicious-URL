@@ -104,9 +104,9 @@ def URL_Converter(urls):
 @app.route("/")
 def root():
     return  render_template("templates/index.html" )
-@app.route("/contact")
-def contact():
-    return  render_template("templates/contact.html" )
+@app.route("/faq")
+def faq():
+    return  render_template("templates/faq.html" )
 
 file = open("ML/KNeighborsClassifier.pkl","rb")
 model = pickle.load(file)
@@ -126,3 +126,4 @@ def detect():
 
         return render_template('templates/detect.html', features=features_df.to_html(classes='table table-striped'), prediction=result, url=url)
      return render_template("templates/detect.html")
+
